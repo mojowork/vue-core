@@ -7,10 +7,11 @@
     <title>demo</title>
 </head>
 <body>
-    <div class="app">
+    <div id="app">
         <h1 t-text="title"></h1>
-        {{msg}}</div>
+        {{msg}}
         <input type="text" t-model="inputValue">
+    </div>
     <script src="./dist/dist.js"> </script>
     <script>
         var app = new Lite({
