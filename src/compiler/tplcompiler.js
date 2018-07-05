@@ -36,10 +36,8 @@ export default class Tplcompiler {
     compilerElement(node) {
         var attrs = node.attributes
         Array.from(attrs).forEach(attr => {
-            debugger
             var attrName = attr.name
             var expr = attr.value
-            debugger
             if (this.isDirective(attrName)) {
                 var directive = attrName.split('-')[1]
                 CompilerUtils[directive](node, this.vm, expr)

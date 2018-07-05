@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>demo</title>
 </head>
+
 <body>
     <div id="app">
         <h1 t-text="title"></h1>
         {{msg}}
-        <input type="text" t-model="inputValue">
+        <br />
+        <input type="text" t-model="msg">
     </div>
-    <script src="./dist/dist.js"> </script>
+    <script src="./dist/dist.js">
+
+
+    </script>
     <script>
         var app = new Lite({
             el: '#app',
@@ -22,6 +28,8 @@
                 inputValue: '请输入....'
             }
         })
+
     </script>
 </body>
+
 </html>
